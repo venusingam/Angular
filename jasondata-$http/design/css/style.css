@@ -1,0 +1,10 @@
+.box {
+    border: 1px solid maroon;
+}
+.nav-tabs a {
+    background-color: maroon;
+    color: #fff;
+}
+.nav {
+    margin-top: 10px;
+}

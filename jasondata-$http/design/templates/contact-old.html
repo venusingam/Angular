@@ -1,0 +1,190 @@
+   
+   <!--Tabs-->
+   <div class="container">
+  <h2>Dynamic Tabs</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+<!--Tabs END-->
+            <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-2 logo">Logo</div>
+                 <div class="col-lg-3 top-heading">Customer 360</div>
+                 <div class="col-lg-7 topsearch">
+                   Search
+                 </div>
+                
+             </div>
+         </div>
+                  <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-3 box">
+                     <p><b>Name:</b> {{cdetails[0].FirstName}}<br>
+                     <b>DOB:</b> {{cdetails[0].DOB}}<br>
+                     <b>Member:</b> {{cdetails[0].Member_Since}}<br>
+                     <b>Family Mambers:</b> {{cdetails[0].Family_Members}}</p>
+                 
+                 </div>
+                 <div class="col-lg-5 box"></div>
+                 <div class="col-lg-4 box"></div>
+                
+             </div>
+         </div>
+            <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-3 box">
+          <table width="100%" border="1px">
+        <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Relation Ship</th>
+        </tr>
+        <tr ng-repeat="x in cdetails[0].familyList[0]">
+            <td>{{x.Family_Member_Name}}</td>
+            <td>{{cdetails[0].familyList[0].DOB}}</td>
+            <td>{{cdetails[0].familyList[0].Relationship}}</td>
+        </tr>
+    </table>           
+                 
+                 </div>
+                 <div class="col-lg-5 box"></div>
+                 <div class="col-lg-4 box"></div>
+             </div>
+         </div>
+          <div ng-controller="controller1">
+               <button ng-click="abc1()">Agency Details</button>
+          <table width="500px" border="1px">
+        <tr>
+            <th>AgencyCode</th>
+            <th>Contact no</th>
+            <th>State</th>
+        </tr>
+        <tr ng-repeat="x in row[0].agencyList">
+            <td>{{x.Agency_Code}}</td>
+            <td>{{x.ContactNbr}}</td>
+            <td>{{x.State}}</td>
+        </tr>
+    </table></div>
+
+<div ng-controller="controller2">
+    <button ng-click="abc2()">BillingDetails</button>
+    <table width="500px" border="1px">
+        <tr>
+            <th>LOB</th>
+            <th>PSC_code</th>
+            <th>BILL_ACCT_SYSKEY</th>
+            <th>Type_Pay_Description</th>
+            <th>BillStatusCode</th>
+            <th>Policy_nbr</th>
+            <th>Type_Pay_Cd</th>
+        </tr>
+        <tr ng-repeat="x in agents[0].billingList">
+            <td>{{x.billingDetails[0].LOB}}</td>
+            <td>{{x.billingDetails[0].PSC_code}}</td>
+            <td>{{x.billingDetails[0].BILL_ACCT_SYSKEY}}</td>
+            <td>{{x.billingDetails[0].Type_Pay_Description}}</td>
+            <td>{{x.billingDetails[0].BillStatusCode}}</td>
+            <td>{{x.billingDetails[0].Policy_nbr}}</td>
+            <td>{{x.billingDetails[0].Type_Pay_Cd}}</td>
+        </tr>
+    </table>
+</div>
+
+<div ng-controller="controller3">
+    <button ng-click="abc3()">Claimdetails</button>
+    <table width="500px" border="1px">
+        <tr>
+            <th>PLW_POL_SYSKEY</th>
+            <th>POL_ACCT_NBR</th>
+            <th>SRC_CUST_ID</th>
+            <th>POL_FM</th>
+            <th>ESTB_PLW_CYC_DT</th>
+            <th>CLM_SYSKEY</th>
+
+        </tr>
+        <tr ng-repeat="x in agents[0].claimsList">
+            <td>{{x.claimsDetails[0].PLW_POL_SYSKEY}}</td>
+            <td>{{x.claimsDetails[0].POL_ACCT_NBR}}</td>
+            <td>{{x.claimsDetails[0].SRC_CUST_ID}}</td>
+            <td>{{x.claimsDetails[0].POL_FM}}</td>
+            <td>{{x.claimsDetails[0].ESTB_PLW_CYC_DT}}</td>
+            <td>{{x.claimsDetails[0].CLM_SYSKEY}}</td>
+        </tr>
+    </table>
+
+</div>
+
+<div ng-controller="controller4">
+    <button ng-click="abc4()">Policy Details</button>
+    <table width="500px" border="1px">
+        <tr>
+            <th>Policy Date</th>
+            <th>Policy Type</th>
+            <th>Policy No</th>
+            <th>State Code</th>
+      
+
+        </tr>
+        <tr ng-repeat="x in agents[0].policyList">
+            <td>{{x.policyDetails[0].policy_effective_date}}</td>
+            <td>{{x.policyDetails[0].policy_type}}</td>
+            <td>{{x.policyDetails[0].policy_wh_nbr}}</td>
+            <td>{{x.policyDetails[0].policy_control_state_code}}</td>
+       
+        </tr>
+    </table>
+</div>
+
+<!--<h2>Agency Details</h2>
+<table width="500" border="1">
+    <tr>
+        <th>Agency Code</th>
+        <th>Contact Number</th>
+        <th>State</th>
+    </tr>
+    <tr ng-repeat="row in result[0].agencyList">
+        <td>{{row.Agency_Code}}</td>
+        <td>{{row.ContactNbr}}</td>
+
+        <td>{{row.State}}</td>
+    </tr>
+</table>
+<table width="800">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    <tr ng-repeat="row in users">
+        <td>{{row.name}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.phone}}</td>
+
+    </tr>
+
+</table>-->

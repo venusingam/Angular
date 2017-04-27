@@ -1,0 +1,239 @@
+[{
+    "_id": "57ff2acea61addcd3fbe1f2f",
+    "EmailID": "",
+    "familyList": [{
+            "DOB": 26825,
+            "TravelersCustomer": "Y",
+            "CustID": 101,
+            "Relationship": "wife",
+            "Family_Member_Name": "AMY M MURPHY"
+        },
+        {
+            "DOB": 26825,
+            "TravelersCustomer": "N",
+            "CustID": "NULL",
+            "Relationship": "son",
+            "Family_Member_Name": "Alex"
+        }
+    ],
+    "CSI": "negative",
+    "FirstName": "SCOTT A",
+    "CID": 102,
+    "DOB": 26768,
+    "Gender": "M",
+    "SPERS_STR_ADR": "156 SANDALEWOOD LN",
+    "SPERS_CTY": "COLUMBIA",
+    "Member_Since": 2012,
+    "billingList": [{
+            "BILL_ACCT_NBR": "9329497236631",
+            "billingDetails": [{
+                "LOB": "HOME",
+                "PSC_code": "03",
+                "BILL_ACCT_SYSKEY": "9033315",
+                "Type_Pay_Description": "DirectBill Installment",
+                "BillStatusCode": "Cancelled",
+                "Policy_nbr": "932949723",
+                "Type_Pay_Cd": "00"
+            }]
+        },
+        {
+            "BILL_ACCT_NBR": "9897849761011",
+            "billingDetails": [{
+                "LOB": "CARS",
+                "PSC_code": "28",
+                "BILL_ACCT_SYSKEY": "11990758",
+                "Type_Pay_Description": "EFT Installment",
+                "BillStatusCode": "Cancelled",
+                "Policy_nbr": 989785421,
+                "Type_Pay_Cd": "90"
+            }]
+        },
+        {
+            "BILL_ACCT_NBR": "9861562486361",
+            "billingDetails": [{
+                "LOB": "HOIS",
+                "PSC_code": "00",
+                "BILL_ACCT_SYSKEY": "9206179",
+                "Type_Pay_Description": "DirectBill Lumpsum",
+                "BillStatusCode": "Active",
+                "Policy_nbr": 989785680,
+                "Type_Pay_Cd": "01"
+            }]
+        },
+        {
+            "BILL_ACCT_NBR": "9908549251011",
+            "billingDetails": [{
+                "LOB": "CARS",
+                "PSC_code": "00",
+                "BILL_ACCT_SYSKEY": "12761963",
+                "Type_Pay_Description": "DirectBill Lumpsum",
+                "BillStatusCode": "Active",
+                "Policy_nbr": 989785700,
+                "Type_Pay_Cd": "16"
+            }]
+        },
+        {
+            "BILL_ACCT_NBR": "9329499256631",
+            "billingDetails": [{
+                "LOB": "HOME",
+                "PSC_code": "03",
+                "BILL_ACCT_SYSKEY": "9038368",
+                "Type_Pay_Description": "DirectBill Installment",
+                "BillStatusCode": "Cancelled",
+                "Policy_nbr": 989785739,
+                "Type_Pay_Cd": "00"
+            }]
+        }
+    ],
+    "claimsList": [{
+            "claimsDetails": [{
+                "PLW_POL_SYSKEY": 12197369,
+                "POL_ACCT_NBR": "990854925",
+                "SRC_CUST_ID": "0006054284401",
+                "POL_FM": "101",
+                "ESTB_PLW_CYC_DT": 42228,
+                "CLM_SYSKEY": 13330960
+            }],
+            "CLM_NBR": "HTY7551"
+        },
+        {
+            "claimsDetails": [{
+                "PLW_POL_SYSKEY": 12233881,
+                "POL_ACCT_NBR": "990951257",
+                "SRC_CUST_ID": "0000125130602",
+                "POL_FM": "101",
+                "ESTB_PLW_CYC_DT": 41856,
+                "CLM_SYSKEY": 11733349
+            }],
+            "CLM_NBR": "HQR9379"
+        },
+        {
+            "claimsDetails": [{
+                "PLW_POL_SYSKEY": 9000002423187,
+                "POL_ACCT_NBR": "986404599",
+                "SRC_CUST_ID": "0006054284401",
+                "POL_FM": "636",
+                "ESTB_PLW_CYC_DT": 40331,
+                "CLM_SYSKEY": 7961135
+            }],
+            "CLM_NBR": "HTQ2203"
+        },
+        {
+            "claimsDetails": [{
+                "PLW_POL_SYSKEY": 20000001244298,
+                "POL_ACCT_NBR": "995041951",
+                "SRC_CUST_ID": "0006275749825",
+                "POL_FM": "203",
+                "ESTB_PLW_CYC_DT": 42395,
+                "CLM_SYSKEY": 13708644
+            }],
+            "CLM_NBR": "HTY7747"
+        },
+        {
+            "claimsDetails": [{
+                "PLW_POL_SYSKEY": 9000004805936,
+                "POL_ACCT_NBR": "991705832",
+                "SRC_CUST_ID": "0009445832610",
+                "POL_FM": "633",
+                "ESTB_PLW_CYC_DT": 41634,
+                "CLM_SYSKEY": 11264071
+            }],
+            "CLM_NBR": "HWQ2653"
+        }
+    ],
+    "Home_ Nbr": 7895,
+    "policyList": [{
+            "policy_nbr": "989784976",
+            "policyDetails": [{
+                "policy_effective_date": 40907,
+                "policy_type": "CARS",
+                "policy_wh_nbr": 11854080,
+                "policy_control_state_code": "OH"
+            }]
+        },
+        {
+            "policy_nbr": 989785352,
+            "policyDetails": [{
+                "policy_effective_date": 41457,
+                "policy_type": "HOIS",
+                "policy_wh_nbr": 9000004794399,
+                "policy_control_state_code": "VT"
+            }]
+        },
+        {
+            "policy_nbr": 989785893,
+            "policyDetails": [{
+                "policy_effective_date": 41638,
+                "policy_type": "CARS",
+                "policy_wh_nbr": 9000003949344,
+                "policy_control_state_code": "OH"
+            }]
+        },
+        {
+            "policy_nbr": "989785389",
+            "policyDetails": [{
+                "policy_effective_date": 40177,
+                "policy_type": "HOIS",
+                "policy_wh_nbr": 9000003949300,
+                "policy_control_state_code": "OH"
+            }]
+        },
+        {
+            "policy_nbr": "989785756",
+            "policyDetails": [{
+                "policy_effective_date": 40907,
+                "policy_type": "CARS",
+                "policy_wh_nbr": 9000003929338,
+                "policy_control_state_code": "OH"
+            }]
+        }
+    ],
+    "SPERS_ST_CD": "SC",
+    "IID": 1,
+    "vinList": [{
+            "MFG_YEAR": 2010,
+            "COLOR": "Blue",
+            "MAKE": "MERCB",
+            "VIN": "4JGBF2FE8AA594043",
+            "MODEL": "GL350 BLUE"
+        },
+        {
+            "MFG_YEAR": 2008,
+            "COLOR": "Black",
+            "MAKE": "MERCB",
+            "VIN": "Y9Q3BO6237M758638",
+            "MODEL": "E320 BLUET"
+        },
+        {
+            "MFG_YEAR": 2007,
+            "COLOR": "White",
+            "MAKE": "FORD",
+            "VIN": "Y6F6KS2650O767177",
+            "MODEL": "F-250 SUPE"
+        }
+    ],
+    "Family_Members": 2,
+    "LastName": "MURPHY",
+    "Cell_Nbr": 33458782213,
+    "agencyList": [{
+            "ContactNbr": 3576423,
+            "State": "SC",
+            "Agency_Code": "0YE752"
+        },
+        {
+            "ContactNbr": 564564653,
+            "State": "VT",
+            "Agency_Code": "0YN715"
+        },
+        {
+            "ContactNbr": 32465456,
+            "State": "VT",
+            "Agency_Code": "0YN750"
+        },
+        {
+            "ContactNbr": 54867342,
+            "State": "VT",
+            "Agency_Code": "0YO057"
+        }
+    ]
+}]

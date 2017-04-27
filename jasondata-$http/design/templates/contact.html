@@ -1,0 +1,151 @@
+            <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-2 logo">Logo</div>
+                 <div class="col-lg-3 top-heading">Customer 360</div>
+                 <div class="col-lg-7 topsearch">
+                   Search
+                 </div>
+                
+             </div>
+         </div>
+                  <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-3 box">
+                     <p><b>Name:</b> {{cdetails[0].FirstName}}<br>
+                     <b>DOB:</b> {{cdetails[0].DOB}}<br>
+                     <b>Member:</b> {{cdetails[0].Member_Since}}<br>
+                     <b>Family Mambers:</b> {{cdetails[0].Family_Members}}</p>
+                 
+                 </div>
+                 <div class="col-lg-5 box"></div>
+                 <div class="col-lg-4 box"></div>
+                
+             </div>
+         </div>
+            <div class="container-fluid">
+             <div class="row">
+                 <div class="col-lg-3 box">
+             <table class="table table-bordered">
+<thead class="thead-default">   
+        <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Relation Ship</th>
+        </tr>
+        </thead><tbody>
+        <tr ng-repeat="x in cdetails[0].familyList[0]">
+            <td>{{x.Family_Member_Name}}</td>
+            <td>{{cdetails[0].familyList[0].DOB}}</td>
+            <td>{{cdetails[0].familyList[0].Relationship}}</td>
+        </tr>
+        </tbody>
+    </table>           
+                 
+                 </div>
+                 <div class="col-lg-9 box" style="height:246px;"> Comments</div>
+                    </div>
+         </div>
+                      <!--Tabs-->
+   <div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#billing">Billing Details</a></li>
+    <li><a data-toggle="tab" href="#policy">Policy Details</a></li>
+    <li><a data-toggle="tab" href="#claim">Claim Details</a></li>
+    <li><a data-toggle="tab" href="#agency">Agency Details</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="billing" class="tab-pane fade in active">
+      <table class="table table-bordered">
+<thead class="thead-default">          
+        <tr>
+            <th>LOB</th>
+            <th>Code</th>
+            <th>BILL KEY</th>
+            <th>Description</th>
+            <th>BillStatus</th>
+            <th>Policy No</th>
+            <th>Pay</th>
+        </tr>
+         </thead>
+         <tbody>
+        <tr ng-repeat="x in cdetails[0].billingList">
+            <td>{{x.billingDetails[0].LOB}}</td>
+            <td>{{x.billingDetails[0].PSC_code}}</td>
+            <td>{{x.billingDetails[0].BILL_ACCT_SYSKEY}}</td>
+            <td>{{x.billingDetails[0].Type_Pay_Description}}</td>
+            <td>{{x.billingDetails[0].BillStatusCode}}</td>
+            <td>{{x.billingDetails[0].Policy_nbr}}</td>
+            <td>{{x.billingDetails[0].Type_Pay_Cd}}</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <div id="policy" class="tab-pane fade">
+       <table class="table table-bordered">
+<thead class="thead-default">   
+        <tr>
+            <th>Policy Date</th>
+            <th>Policy Type</th>
+            <th>Policy No</th>
+            <th>State Code</th>
+</tr>
+</thead><tbody>
+        <tr ng-repeat="x in cdetails[0].policyList">
+            <td>{{x.policyDetails[0].policy_effective_date}}</td>
+            <td>{{x.policyDetails[0].policy_type}}</td>
+            <td>{{x.policyDetails[0].policy_wh_nbr}}</td>
+            <td>{{x.policyDetails[0].policy_control_state_code}}</td>
+        </tr>
+            </tbody>
+    </table>
+    </div>
+    <div id="claim" class="tab-pane fade">
+      <table class="table table-bordered">
+<thead class="thead-default">   
+        <tr>
+            <th>Policy KEY</th>
+            <th>Policy AC.NO</th>
+            <th>Customer ID</th>
+            <th>Policy FM</th>
+            <th>Policy Date</th>
+            <th>Claim KEY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in cdetails[0].claimsList">
+            <td>{{x.claimsDetails[0].PLW_POL_SYSKEY}}</td>
+            <td>{{x.claimsDetails[0].POL_ACCT_NBR}}</td>
+            <td>{{x.claimsDetails[0].SRC_CUST_ID}}</td>
+            <td>{{x.claimsDetails[0].POL_FM}}</td>
+            <td>{{x.claimsDetails[0].ESTB_PLW_CYC_DT}}</td>
+            <td>{{x.claimsDetails[0].CLM_SYSKEY}}</td>
+        </tr>
+            </tbody>
+    </table>
+    </div>
+    <div id="agency" class="tab-pane fade">
+      <table class="table table-bordered">
+<thead class="thead-default">   
+    <tr>
+        <th>Agency Code</th>
+        <th>Contact Number</th>
+        <th>State</th>
+    </tr>
+</thead><tbody>
+    <tr ng-repeat="row in cdetails[0].agencyList">
+        <td>{{row.Agency_Code}}</td>
+        <td>{{row.ContactNbr}}</td>
+        <td>{{row.State}}</td>
+    </tr>
+        </tbody>
+</table>
+
+    </div>
+  </div>
+</div>
+<!--Tabs END-->
+                 
+
+          
