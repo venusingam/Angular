@@ -1,0 +1,68 @@
+<div class="form1">
+
+
+    <form class="loginform">
+
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Name:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" placeholder="Enter your fullname" ng-model="username">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Email:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" placeholder="Enter your email-id" ng-model="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Create Password:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" placeholder="Enter the password" ng-model="createpassword">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Mobile.No:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" name="" value="" maxlength="2" style="width:25px;"> <input type="text" ng-model="mobileno">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Address:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="text" ng-model="adress">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <label for="">Gender:</label>
+            </div>
+            <div class="col-lg-4">
+                <input type="radio" name="gender" ng-model="male">Male
+                <input type="radio" name="gender" ng-model="female">female
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <input type="file" name="" value="" ng-model="file">
+                <input type="button" name="" value="UploadFile">
+            </div>
+            <div class="col-lg-12">
+                <input type="checkbox" name="" value="">I agreed to the Terms & Conditions
+            </div>
+            <div class="col-lg-12">
+                <input type="button" name="" value="Add Account" ng-click="createAccount();">
+            </div>
+    </form>
+    </div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/lib/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/formController.js"></script>
+    <style>
+        .loginform {
+            width: 600px;
+            padding: 10px;
+        }
+        
+        .form1 {
+            background-color: lightgreen;
+            width: 600px;
+        }
+        
+        .col-lg-3 {
+            width: 30%;
+            float: left;
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .col-lg-4 {
+            width: 70%;
+            float: left;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .col-lg-12 {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body ng-app="uma">
+    <a ui-sref="formstate">form</a>
+    <div ui-view>
+
+    </div>
+</body>
+
+</html>
